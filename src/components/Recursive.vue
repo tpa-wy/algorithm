@@ -18,10 +18,13 @@ export default {
   },
 
   mounted() {
-    this.recursive(this.start);
+    this.init()
   },
 
   methods: {
+    init() {
+      this.recursive(this.start);
+    },
     // 递归函数
     recursive(startNumber) {
       // console.log(startNumber);
