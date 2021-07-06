@@ -11,7 +11,7 @@ export default {
   name: "MyProjectSelectionsort",
   data() {
     return {
-      arr: [5, 3, 6, 2, 10,9],
+      arr: [5, 3, 6, 2, 10, 9, 9],
       arr2: [],
     };
   },
@@ -32,14 +32,14 @@ export default {
       }
       return smallest_index;
     },
-    sort(arr){
-        let _arr = [...arr]
-        for(var i in arr){
-            let smallest_index = this.getsmallArr(_arr)
-            this.arr2.push(_arr[smallest_index])
-            _arr.splice(smallest_index,1)
-        }
-    }
+    sort(arr) {
+      let _arr = [...arr];
+      for (var i in arr) {
+        let smallest_index = this.getsmallArr(_arr);
+        this.arr2.push(_arr[smallest_index]);
+        _arr.splice(smallest_index, 1);
+      }
+    },
   },
 };
 </script>
